@@ -4,6 +4,7 @@ import SwiftData
 @main
 struct StreakDailyApp: App {
     @Environment(\.scenePhase) private var scenePhase
+    @State private var didFinishLaunch = false
 
     private let dependencies: AppDependencies
 
@@ -19,13 +20,29 @@ struct StreakDailyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ProjectListView()
-                .environment(dependencies.projectService)
-                .task { await dependencies.reconciliationService.reconcile() }
-                .onChange(of: scenePhase) { _, newPhase in
-                    guard newPhase == .active else { return }
-                    Task { await dependencies.reconciliationService.reconcile() }
+            ZStack {
+                ProjectListView()
+                    .environment(dependencies.projectService)
+                    .task { await dependencies.reconciliationService.reconcile() }
+                    .onChange(of: scenePhase) { _, newPhase in
+                        guard newPhase == .active else { return }
+                        Task { await dependencies.reconciliationService.reconcile() }
+                    }
+
+                if !didFinishLaunch {
+                    LaunchView()
+                        .transition(.opacity)
+                        .zIndex(1)
                 }
+            }
+            .task {
+                // Cancellation only short-circuits the wait; the launch view
+                // is dismissed either way.
+                try? await Task.sleep(for: .seconds(1.5))
+                withAnimation(.easeInOut(duration: 0.5)) {
+                    didFinishLaunch = true
+                }
+            }
         }
         .modelContainer(dependencies.container)
     }
