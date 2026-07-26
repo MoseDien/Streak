@@ -1,0 +1,17 @@
+# Xcode / Tuist tuist generate
+*.xcodeproj
+*.xcworkspace
+Derived/
+build/
+*.xcuserstate
+xcuserdata/
+
+# Tuist
+.tuist/
+
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
