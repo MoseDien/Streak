@@ -1,6 +1,6 @@
 import Testing
 import Foundation
-@testable import LearningReminder
+@testable import StreakDaily
 
 @Suite("Daily check-in finalization policy (CLAUDE.md §11, §14)")
 struct DailyCheckInPolicyTests {

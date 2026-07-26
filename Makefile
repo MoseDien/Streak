@@ -10,7 +10,7 @@ test:
 	mise exec -- tuist test --no-selective-testing
 
 open: gen
-	open LearningReminder.xcworkspace
+	open StreakDaily.xcworkspace
 
 clean:
-	rm -rf Derived LearningReminder.xcodeproj LearningReminder.xcworkspace
+	rm -rf Derived StreakDaily.xcodeproj StreckDaily.xcworkspace

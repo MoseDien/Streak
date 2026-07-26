@@ -1,7 +1,7 @@
 import Testing
 import Foundation
 import SwiftData
-@testable import LearningReminder
+@testable import StreakDaily
 
 @MainActor
 @Suite("Project service (CLAUDE.md §7, §8, §18.1, §31.1, §31.2, §31.5)")

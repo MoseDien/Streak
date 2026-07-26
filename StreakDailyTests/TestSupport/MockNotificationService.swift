@@ -1,5 +1,5 @@
 import Foundation
-@testable import LearningReminder
+@testable import StreakDaily
 
 /// Records notification calls so project transitions can assert their
 /// scheduling side-effects (CLAUDE.md §31.5).

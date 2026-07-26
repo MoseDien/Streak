@@ -1,6 +1,6 @@
 # Streak Daily
 
-> 用户可见的 app 名为 **Streak Daily**(bundle id `com.dienbell.streak`)。内部 Xcode 项目/模块名仍为 `LearningReminder`,故构建产物为 `LearningReminder.xcworkspace`。
+> 用户可见的 app 名为 **Streak Daily**(bundle id `com.dienbell.streak`)。内部 Xcode 项目/模块名仍为 `StreckDaily`,故构建产物为 `StreckDaily.xcworkspace`。
 
 一个帮助你对**少数几件每天要做的事**(比如定时学习)保持专注的 iOS app。
 为每个学习项目设置**每天定时本地提醒**,鼓励"少而精"——同时进行的活跃项目建议不超过 3 个。
@@ -51,10 +51,10 @@ mise use -g tuist@latest
 mise exec -- tuist generate
 
 # 3. 打开工作区
-open LearningReminder.xcworkspace
+open StreckDaily.xcworkspace
 ```
 
-> `LearningReminder.xcworkspace` / `LearningReminder.xcodeproj` / `Derived/` 都是**生成物**,不要手动改、也不必提交(见 `.gitignore`)。
+> `StreckDaily.xcworkspace` / `StreckDaily.xcodeproj` / `Derived/` 都是**生成物**,不要手动改、也不必提交(见 `.gitignore`)。
 
 ### 便捷命令(可选)
 
@@ -110,10 +110,10 @@ make test    # 运行全部单测
 ## 项目结构
 
 ```
-esthings/
+StreckDaily/
 ├── Project.swift                # Tuist 清单(app + 单测两个 target)
 ├── Tuist/Dependencies.swift     # 标记 Tuist 根目录(空依赖)
-├── LearningReminder/            # app target
+├── StreckDaily/                  # app target
 │   ├── App/                     # 入口、组合根、导航路由、启动对齐
 │   ├── Domain/                  # 纯领域:模型/枚举/策略/错误(无 SwiftUI/SwiftData 依赖)
 │   │   ├── Models/              # ProjectStatus, ReminderTime, ReminderPolicy ...
@@ -123,7 +123,7 @@ esthings/
 │   ├── Services/                # ProjectService、CalendarService、Notifications/
 │   ├── Features/                # 按特性组织的 SwiftUI 视图(List/Detail/Editor)
 │   └── Shared/                  # 分组、错误包装等展示层工具
-└── LearningReminderTests/       # 单测 + TestSupport(Mock、FixedCalendarProvider)
+└── StreckDailyTests/       # 单测 + TestSupport(Mock、FixedCalendarProvider)
 ```
 
 ## 架构概览

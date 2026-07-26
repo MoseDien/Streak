@@ -1,6 +1,6 @@
 import Testing
 import Foundation
-@testable import LearningReminder
+@testable import StreakDaily
 
 @Suite("Project status transitions (CLAUDE.md §7)")
 struct ProjectStatusTransitionPolicyTests {

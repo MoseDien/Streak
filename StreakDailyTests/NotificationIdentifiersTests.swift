@@ -1,6 +1,6 @@
 import Testing
 import Foundation
-@testable import LearningReminder
+@testable import StreakDaily
 
 @Suite("Notification identifiers (CLAUDE.md §15.3, §15.4)")
 struct NotificationIdentifiersTests {

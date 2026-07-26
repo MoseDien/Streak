@@ -1,7 +1,7 @@
 import Testing
 import Foundation
 import SwiftData
-@testable import LearningReminder
+@testable import StreakDaily
 
 @MainActor
 @Suite("Project sectioning (CLAUDE.md §21.1)")

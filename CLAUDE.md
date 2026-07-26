@@ -1121,9 +1121,9 @@ Organize files primarily by feature.
 Suggested structure:
 
 ```text
-LearningReminder/
+StreakDaily/
 ├── App/
-│   ├── LearningReminderApp.swift
+│   ├── StreakDailyApp.swift
 │   ├── AppDependencies.swift
 │   ├── AppRoute.swift
 │   └── AppReconciliationService.swift

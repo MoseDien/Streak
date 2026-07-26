@@ -1,5 +1,5 @@
 import Foundation
-@testable import LearningReminder
+@testable import StreakDaily
 
 /// A calendar/date provider with fixed values for deterministic tests
 /// (CLAUDE.md §31.4).

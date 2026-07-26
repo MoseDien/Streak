@@ -1,7 +1,7 @@
 import Testing
 import Foundation
 import SwiftData
-@testable import LearningReminder
+@testable import StreakDaily
 
 @MainActor
 @Suite("SwiftData persistence (CLAUDE.md §31.6)")

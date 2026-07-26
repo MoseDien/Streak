@@ -1,7 +1,7 @@
 import ProjectDescription
 
 let project = Project(
-    name: "LearningReminder",
+    name: "StreakDaily",
     settings: .settings(
         base: [
             "SWIFT_VERSION": "6.0",
@@ -13,7 +13,7 @@ let project = Project(
     ),
     targets: [
         .target(
-            name: "LearningReminder",
+            name: "StreakDaily",
             destinations: [.iPhone],
             product: .app,
             bundleId: "com.dienbell.streak",
@@ -23,22 +23,22 @@ let project = Project(
                 "UILaunchScreen": [:],
                 "UISupportedInterfaceOrientations": ["UIInterfaceOrientationPortrait"]
             ]),
-            sources: ["LearningReminder/**/*.swift"],
-            resources: ["LearningReminder/Resources/**"],
+            sources: ["StreakDaily/**/*.swift"],
+            resources: ["StreakDaily/Resources/**"],
             dependencies: [],
             settings: .settings(base: [
                 "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon"
             ])
         ),
         .target(
-            name: "LearningReminderTests",
+            name: "StreakDailyTests",
             destinations: [.iPhone],
             product: .unitTests,
             bundleId: "com.dienbell.streak.tests",
             deploymentTargets: .iOS("26.0"),
-            sources: ["LearningReminderTests/**"],
+            sources: ["StreakDailyTests/**"],
             dependencies: [
-                .target(name: "LearningReminder")
+                .target(name: "StreakDaily")
             ]
         )
     ]

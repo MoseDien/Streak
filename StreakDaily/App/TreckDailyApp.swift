@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct LearningReminderApp: App {
+struct StreakDailyApp: App {
     @Environment(\.scenePhase) private var scenePhase
 
     private let dependencies: AppDependencies

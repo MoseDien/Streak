@@ -1,6 +1,6 @@
 import Testing
 import Foundation
-@testable import LearningReminder
+@testable import StreakDaily
 
 @Suite("Calendar normalization (CLAUDE.md §12, §31.4)")
 struct CalendarProviderTests {
