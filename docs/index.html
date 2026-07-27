@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official support for Streak Daily, a private daily reminder app for iPhone.">
+  <meta name="theme-color" content="#e41b30">
+  <title>Streak Daily Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --rouge: #e41b30;
+      --ink: #17171a;
+      --muted: #68686f;
+      --paper: #f7f6f3;
+      --card: rgba(255, 255, 255, .84);
+      --line: rgba(23, 23, 26, .1);
+      --shadow: 0 18px 60px rgba(26, 22, 20, .08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f5f4f1;
+        --muted: #aaa8a5;
+        --paper: #111113;
+        --card: rgba(29, 29, 32, .86);
+        --line: rgba(255, 255, 255, .11);
+        --shadow: 0 18px 60px rgba(0, 0, 0, .28);
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 0%, rgba(228, 27, 48, .11), transparent 32rem),
+        var(--paper);
+      font-family: "Avenir Next", Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    .shell { width: min(960px, calc(100% - 40px)); margin: 0 auto; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; }
+    .brand { font-weight: 700; letter-spacing: -.02em; text-decoration: none; }
+    .rouge { color: var(--rouge); }
+    nav a { color: var(--muted); font-size: .94rem; text-decoration: none; margin-left: 22px; }
+    nav a:hover, nav a:focus-visible { color: var(--rouge); }
+    .hero { padding: 92px 0 76px; max-width: 760px; }
+    .eyebrow {
+      color: var(--rouge);
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: .78rem;
+    }
+    h1 {
+      margin: 12px 0 20px;
+      font-size: clamp(3rem, 9vw, 6.7rem);
+      line-height: .94;
+      letter-spacing: -.065em;
+    }
+    .hero p { margin: 0; max-width: 620px; color: var(--muted); font-size: clamp(1.08rem, 2.3vw, 1.32rem); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: var(--rouge);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(228, 27, 48, .24);
+    }
+    .button.secondary { background: transparent; color: var(--ink); border: 1px solid var(--line); box-shadow: none; }
+    section { padding: 34px 0 74px; scroll-margin-top: 20px; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.7rem); line-height: 1.1; letter-spacing: -.035em; margin: 0 0 24px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.14rem; letter-spacing: -.015em; }
+    .card p, .card li { color: var(--muted); }
+    .card p { margin: 0; }
+    ol { margin: 10px 0 0; padding-left: 1.25rem; }
+    li + li { margin-top: 7px; }
+    .wide { grid-column: 1 / -1; }
+    .privacy { display: flex; gap: 18px; align-items: flex-start; }
+    .privacy-mark {
+      flex: 0 0 auto;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      color: white;
+      background: var(--rouge);
+      font-weight: 800;
+    }
+    footer { border-top: 1px solid var(--line); padding: 30px 0 44px; color: var(--muted); font-size: .9rem; }
+    footer .shell { display: flex; justify-content: space-between; gap: 20px; }
+    @media (max-width: 680px) {
+      .shell { width: min(100% - 28px, 960px); }
+      nav { display: none; }
+      .hero { padding: 64px 0 54px; }
+      .grid { grid-template-columns: 1fr; }
+      .wide { grid-column: auto; }
+      .card { padding: 22px; border-radius: 20px; }
+      footer .shell { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="shell">
+    <a class="brand" href="#top">Strea<span class="rouge">k</span> <span class="rouge">D</span>aily</a>
+    <nav aria-label="Support navigation">
+      <a href="#getting-started">Getting started</a>
+      <a href="#notifications">Notifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero">
+      <div class="eyebrow">Official app support</div>
+      <h1>Small steps.<br><span class="rouge">Every day.</span></h1>
+      <p>Streak Daily helps you stay focused on a few meaningful projects with simple, private, on-device reminders.</p>
+      <div class="actions">
+        <a class="button" href="#getting-started">Find an answer</a>
+        <a class="button secondary" href="https://github.com/MoseDien/Streak/issues/new" rel="noopener">Contact support</a>
+      </div>
+    </section>
+
+    <section id="getting-started">
+      <h2>Getting started</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Create a project</h3>
+          <p>Tap the plus button, add a title and optional daily activity, then choose up to three reminder times.</p>
+        </article>
+        <article class="card">
+          <h3>Start a project</h3>
+          <p>Open the project and tap <strong>Start</strong>. Streak Daily recommends keeping no more than three projects active at once.</p>
+        </article>
+        <article class="card">
+          <h3>Pause or finish</h3>
+          <p>Pause an active project when you need a break. Completed and abandoned projects are final and stop sending reminders.</p>
+        </article>
+        <article class="card">
+          <h3>Edit reminders</h3>
+          <p>Open a project, choose Edit, and update its daily times. Changes are applied to future reminders automatically.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="notifications">
+      <h2>Notification help</h2>
+      <div class="grid">
+        <article class="card wide">
+          <h3>Not receiving reminders?</h3>
+          <ol>
+            <li>Make sure the project status is <strong>In Progress</strong>.</li>
+            <li>Confirm that Daily Reminders is enabled and at least one time is set.</li>
+            <li>Open iPhone Settings → Notifications → Streak Daily.</li>
+            <li>Turn on Allow Notifications, Sounds, and the alert styles you prefer.</li>
+            <li>Return to Streak Daily and reopen the project.</li>
+          </ol>
+        </article>
+        <article class="card">
+          <h3>Why did reminders stop?</h3>
+          <p>Reminders are automatically removed when a project is paused, completed, abandoned, or deleted.</p>
+        </article>
+        <article class="card">
+          <h3>Do reminders need internet?</h3>
+          <p>No. Streak Daily uses local iPhone notifications and does not require a network connection.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <h2>Data and privacy</h2>
+      <div class="card privacy">
+        <div class="privacy-mark" aria-hidden="true">✓</div>
+        <div>
+          <h3>Private by design</h3>
+          <p>Your projects and reminder settings are stored locally on your device. Streak Daily does not require an account, include analytics, or upload your project data to a server.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Still need help?</h2>
+      <div class="card">
+        <h3>Send a support request</h3>
+        <p>Open a GitHub issue and include your iOS version, device model, and a short description of what happened. Please do not include sensitive personal information.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/MoseDien/Streak/issues/new?title=Support%3A%20" rel="noopener">Open a support request</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      <span>© 2026 Streak Daily</span>
+      <span>Made for focused, consistent progress.</span>
+    </div>
+  </footer>
+</body>
+</html>
