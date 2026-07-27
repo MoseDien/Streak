@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		051433FA835D65BF4CF6F99A /* NotificationAuthorizationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C97E4CDA671D72777036D7 /* NotificationAuthorizationState.swift */; };
+		1483FD8DAD4DCE4731407F8F /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC89A1E8BD8DBE86379A85 /* ProjectListView.swift */; };
+		18210B6FC043DC09ED91C58F /* DailyCheckInPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF27E5AF2C21FE323E16413 /* DailyCheckInPolicy.swift */; };
+		1C2A0827166B6569C1DF2499 /* FixedCalendarProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348DFA0AED26ABB49BE4F58F /* FixedCalendarProvider.swift */; };
+		1E824EDBC42C07BD2780D15E /* LaunchWordmarkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8910BC43765B38B6C8F1145C /* LaunchWordmarkLabel.swift */; };
+		22EB8D59AA22F993BC65F71F /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60028BA2425F1F174076E82 /* CalendarService.swift */; };
+		24AF7C09D4A7CD94CB7F486C /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE5B9DB3485470122AB66A7 /* AppRoute.swift */; };
+		27007CA3532E6185680CCB07 /* NotificationScheduling.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB39F810C9E81FE558D30550 /* NotificationScheduling.swift */; };
+		2880ED06741DD39B5C8EFD35 /* ProjectSectioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF14983A4C764F0696105E /* ProjectSectioning.swift */; };
+		2A887337F56C2A0D2ED1F78D /* ProjectStatusTransitionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773470E94CD062B938A41035 /* ProjectStatusTransitionPolicy.swift */; };
+		2F08A69D36A6BAD7CF4EB750 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E57E643EB2373B66AA89686 /* AppDependencies.swift */; };
+		3A6D6E524D154DF02C191ACE /* SystemNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFC95CD72684F914A6C1EED /* SystemNotificationService.swift */; };
+		3AF6A75F473808890FE1D243 /* ProjectReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B231EB8ACA48CD0F460A1F /* ProjectReminder.swift */; };
+		40AEB39FFCAB8393D0DFC0E2 /* ProjectStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320495436AC33C4BD87F24EF /* ProjectStatus.swift */; };
+		42B07C0E93D90A658A57EC8D /* LocalDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A816F9144D4536AE325C2A /* LocalDay.swift */; };
+		491F1C20EAC7582CE623DC49 /* NotificationIdentifiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474FAADB347C11B61BE220C /* NotificationIdentifiersTests.swift */; };
+		4CD64CD199E279B64CC49C5E /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB65D0A571ECABA89956E44 /* ProjectDetailView.swift */; };
+		52CA7DD074E54B60B6E407A7 /* ReminderTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F0A9B582A63940FCB133D7 /* ReminderTime.swift */; };
+		5718D2704F540CE67B54983A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B90253ABA4B16B7CAFC7E4B /* Assets.xcassets */; };
+		5B03CF147A86EB850663F6FB /* DailyCheckInPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767D4117A3426F5E410D0B22 /* DailyCheckInPolicyTests.swift */; };
+		5C3FD5E102FA4DF332A11690 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E88C45821CD2F2397B7A1 /* AppError.swift */; };
+		66A592FD8585C16C7A5181A9 /* CalendarProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476C7B6FE5E41C4439164DAF /* CalendarProviderTests.swift */; };
+		694DE6266AAFC24E9264A4F1 /* NotificationIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB7705ABCD3E6CBFDE57A15 /* NotificationIdentifiers.swift */; };
+		6FE565E98A902F4C47F47948 /* ActiveProjectPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB9D23B4D60221D64AE1CD /* ActiveProjectPolicyTests.swift */; };
+		745336032C795FF6586BA0EC /* TreckDailyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C41D9F93F6171FE4DF1258 /* TreckDailyApp.swift */; };
+		74F053A08CB5347CE10095FE /* DailyCheckInError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13728D968824DB51D13C9C85 /* DailyCheckInError.swift */; };
+		7A17CBD9E9ABC43668BDE388 /* ProjectSectioningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031BB766896D10F604290D0E /* ProjectSectioningTests.swift */; };
+		823FD6145EABA076B2CD4A30 /* DailyCheckInStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E4070E7423991D5D873FC1 /* DailyCheckInStatus.swift */; };
+		894E165F05E98F9B0B845CCB /* FinalDailyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BBD0E779556AF107B97557 /* FinalDailyResult.swift */; };
+		8E1207C86A720F04BC97E538 /* ProjectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEECB71964F63DC50D765DF /* ProjectError.swift */; };
+		95D0EBAE39FD82B4CD491F40 /* TuistBundle+StreakDaily.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD72E7C8E006EF4DE063916 /* TuistBundle+StreakDaily.swift */; };
+		9BF83BBE859672B23A41F960 /* MockNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7943D7064E23CB0360E687 /* MockNotificationService.swift */; };
+		9D6D179FB8AAEC24B0AC828B /* ProjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBE3013DD5DC1C466559460 /* ProjectService.swift */; };
+		A4A53BE17E68A422141C2E42 /* ModelContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C1D01CF0C39AB5D790BC5 /* ModelContainerFactory.swift */; };
+		A52431F677DC3D1FDA3EC804 /* ReminderPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C908C33244F2F24216ECA5 /* ReminderPolicy.swift */; };
+		AEC1BFF5C1E335DC788DB3CA /* TuistAssets+StreakDaily.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44115893C41A9384BF1BED /* TuistAssets+StreakDaily.swift */; };
+		BF11AE3924410CF3B8CF5388 /* ProjectServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221EBDDE23C82827A1FEF1AC /* ProjectServiceTests.swift */; };
+		BF9D9CD9218E3EEE0B08F177 /* ActiveProjectPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184B371BFC1440511097CBB /* ActiveProjectPolicy.swift */; };
+		C67DCCCC108D2C22ED4C3C51 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BF98F2D7C79A5A31561C4 /* LaunchView.swift */; };
+		C7CAC097477B2BBCE3F97F1C /* ProjectRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB20DBF0B81E756DB511CEA /* ProjectRowView.swift */; };
+		C859FF3A7FFC4DE1A7B1769C /* ProjectStatusTransitionPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73353DBEB3CC078A87A92D21 /* ProjectStatusTransitionPolicyTests.swift */; };
+		C860F241A34A6176485E0565 /* DailyCheckInManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7A7A0F37DB415BD48DD977 /* DailyCheckInManaging.swift */; };
+		C9CFE312D05C495E0EBC61E4 /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ACB991DA161B141ACA83C3 /* PersistenceTests.swift */; };
+		CB1584070AC1581A942F792F /* DailyCheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09BAE34B5087E9468F64FB3 /* DailyCheckIn.swift */; };
+		E311C70FA13B5E2274284D67 /* NotificationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D92C8B97E939BA09A2D49C /* NotificationError.swift */; };
+		E579DC672B6EB2CD5665F4A9 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8288A1E61BD9FA0D939540EE /* NotificationDelegate.swift */; };
+		E7E5A11AB0389650D2D3027F /* DailyCheckInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850C053762855560C28C565A /* DailyCheckInService.swift */; };
+		EDA2E8C69CCB68FD338CEFD5 /* ProjectEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E251CB89F80361E3C696293E /* ProjectEditorView.swift */; };
+		EDA42696E54F947A345BD6BF /* AppReconciliationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3176A3ADD86814FC64C081 /* AppReconciliationService.swift */; };
+		EFAD3614E534A944CFDCB885 /* ReminderEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267F12C3749CC7AB88E36E21 /* ReminderEntry.swift */; };
+		F0B50443A789E31975CFE6C5 /* LearningProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8D2E2222EC7DCFA0E2C16 /* LearningProject.swift */; };
+		F15BDF3DD03A177C004DB17D /* ProjectManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D2AC10BAA59ABA28687BEE /* ProjectManaging.swift */; };
+		FDD9F97C0AF79B83C19431B2 /* ReminderTimeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7815D11A227697AC59AFC4 /* ReminderTimeInput.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E43000FA8DA2832280A32680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9429538F00A611E7808A25D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9351C27F538AF249E32A8FA7;
+			remoteInfo = StreakDaily;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		741853BBCB4A9267CBFBEC07 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB5DF8C629321F445264C0E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		031BB766896D10F604290D0E /* ProjectSectioningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSectioningTests.swift; sourceTree = "<group>"; };
+		0E57E643EB2373B66AA89686 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		13728D968824DB51D13C9C85 /* DailyCheckInError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCheckInError.swift; sourceTree = "<group>"; };
+		1B90253ABA4B16B7CAFC7E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E7943D7064E23CB0360E687 /* MockNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotificationService.swift; sourceTree = "<group>"; };
+		221EBDDE23C82827A1FEF1AC /* ProjectServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectServiceTests.swift; sourceTree = "<group>"; };
+		25D2AC10BAA59ABA28687BEE /* ProjectManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManaging.swift; sourceTree = "<group>"; };
+		267F12C3749CC7AB88E36E21 /* ReminderEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderEntry.swift; sourceTree = "<group>"; };
+		28B231EB8ACA48CD0F460A1F /* ProjectReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectReminder.swift; sourceTree = "<group>"; };
+		31BBD0E779556AF107B97557 /* FinalDailyResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalDailyResult.swift; sourceTree = "<group>"; };
+		320495436AC33C4BD87F24EF /* ProjectStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatus.swift; sourceTree = "<group>"; };
+		348DFA0AED26ABB49BE4F58F /* FixedCalendarProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedCalendarProvider.swift; sourceTree = "<group>"; };
+		38C97E4CDA671D72777036D7 /* NotificationAuthorizationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAuthorizationState.swift; sourceTree = "<group>"; };
+		3D3176A3ADD86814FC64C081 /* AppReconciliationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReconciliationService.swift; sourceTree = "<group>"; };
+		3DF27E5AF2C21FE323E16413 /* DailyCheckInPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCheckInPolicy.swift; sourceTree = "<group>"; };
+		476C7B6FE5E41C4439164DAF /* CalendarProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarProviderTests.swift; sourceTree = "<group>"; };
+		4BBE3013DD5DC1C466559460 /* ProjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectService.swift; sourceTree = "<group>"; };
+		4BE5B9DB3485470122AB66A7 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		4C7A7A0F37DB415BD48DD977 /* DailyCheckInManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCheckInManaging.swift; sourceTree = "<group>"; };
+		55F0A9B582A63940FCB133D7 /* ReminderTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTime.swift; sourceTree = "<group>"; };
+		56C41D9F93F6171FE4DF1258 /* TreckDailyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreckDailyApp.swift; sourceTree = "<group>"; };
+		5FA8D2E2222EC7DCFA0E2C16 /* LearningProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningProject.swift; sourceTree = "<group>"; };
+		61C908C33244F2F24216ECA5 /* ReminderPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderPolicy.swift; sourceTree = "<group>"; };
+		633E88C45821CD2F2397B7A1 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		73353DBEB3CC078A87A92D21 /* ProjectStatusTransitionPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatusTransitionPolicyTests.swift; sourceTree = "<group>"; };
+		767D4117A3426F5E410D0B22 /* DailyCheckInPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCheckInPolicyTests.swift; sourceTree = "<group>"; };
+		773470E94CD062B938A41035 /* ProjectStatusTransitionPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatusTransitionPolicy.swift; sourceTree = "<group>"; };
+		779094EDE2DA6888D8CC2293 /* StreakDailyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreakDailyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5BF98F2D7C79A5A31561C4 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		8288A1E61BD9FA0D939540EE /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		83A816F9144D4536AE325C2A /* LocalDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDay.swift; sourceTree = "<group>"; };
+		850C053762855560C28C565A /* DailyCheckInService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCheckInService.swift; sourceTree = "<group>"; };
+		874C1D01CF0C39AB5D790BC5 /* ModelContainerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContainerFactory.swift; sourceTree = "<group>"; };
+		8910BC43765B38B6C8F1145C /* LaunchWordmarkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchWordmarkLabel.swift; sourceTree = "<group>"; };
+		8C8EA66DAA33F62077D7D3DA /* StreakDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreakDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBC89A1E8BD8DBE86379A85 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
+		8F26C4454CE6821555912EE0 /* StreakDaily-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "StreakDaily-Info.plist"; sourceTree = "<group>"; };
+		96EB9D23B4D60221D64AE1CD /* ActiveProjectPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveProjectPolicyTests.swift; sourceTree = "<group>"; };
+		9FFC95CD72684F914A6C1EED /* SystemNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationService.swift; sourceTree = "<group>"; };
+		A474FAADB347C11B61BE220C /* NotificationIdentifiersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationIdentifiersTests.swift; sourceTree = "<group>"; };
+		AAB7705ABCD3E6CBFDE57A15 /* NotificationIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationIdentifiers.swift; sourceTree = "<group>"; };
+		AB39F810C9E81FE558D30550 /* NotificationScheduling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduling.swift; sourceTree = "<group>"; };
+		ABB20DBF0B81E756DB511CEA /* ProjectRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectRowView.swift; sourceTree = "<group>"; };
+		B1D92C8B97E939BA09A2D49C /* NotificationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationError.swift; sourceTree = "<group>"; };
+		BFD72E7C8E006EF4DE063916 /* TuistBundle+StreakDaily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+StreakDaily.swift"; sourceTree = "<group>"; };
+		C5ACB991DA161B141ACA83C3 /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		C7E4070E7423991D5D873FC1 /* DailyCheckInStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCheckInStatus.swift; sourceTree = "<group>"; };
+		CBEECB71964F63DC50D765DF /* ProjectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectError.swift; sourceTree = "<group>"; };
+		DBB65D0A571ECABA89956E44 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		DE7815D11A227697AC59AFC4 /* ReminderTimeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTimeInput.swift; sourceTree = "<group>"; };
+		DF4EC0C46267A7C57E2E7866 /* StreakDailyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "StreakDailyTests-Info.plist"; sourceTree = "<group>"; };
+		E251CB89F80361E3C696293E /* ProjectEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEditorView.swift; sourceTree = "<group>"; };
+		EC44115893C41A9384BF1BED /* TuistAssets+StreakDaily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+StreakDaily.swift"; sourceTree = "<group>"; };
+		EDAF14983A4C764F0696105E /* ProjectSectioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSectioning.swift; sourceTree = "<group>"; };
+		F09BAE34B5087E9468F64FB3 /* DailyCheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCheckIn.swift; sourceTree = "<group>"; };
+		F184B371BFC1440511097CBB /* ActiveProjectPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveProjectPolicy.swift; sourceTree = "<group>"; };
+		F60028BA2425F1F174076E82 /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48DFFF5A0D02890A01DCA1B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D56B10F8BB051FBCDC1D393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073DF06B5018744FB613C288 /* StreakDailyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F96405C2B84EE480765C7BB5 /* TestSupport */,
+				96EB9D23B4D60221D64AE1CD /* ActiveProjectPolicyTests.swift */,
+				476C7B6FE5E41C4439164DAF /* CalendarProviderTests.swift */,
+				767D4117A3426F5E410D0B22 /* DailyCheckInPolicyTests.swift */,
+				A474FAADB347C11B61BE220C /* NotificationIdentifiersTests.swift */,
+				C5ACB991DA161B141ACA83C3 /* PersistenceTests.swift */,
+				031BB766896D10F604290D0E /* ProjectSectioningTests.swift */,
+				221EBDDE23C82827A1FEF1AC /* ProjectServiceTests.swift */,
+				73353DBEB3CC078A87A92D21 /* ProjectStatusTransitionPolicyTests.swift */,
+			);
+			path = StreakDailyTests;
+			sourceTree = "<group>";
+		};
+		0F291171383DAF865C9615FB /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				B44CB694CC3DCCF1B74B2AD1 /* InfoPlists */,
+				9159822440E7868108121B56 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		118E4C837A4C3BCA15A6FEE0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EBBB0A074DC84E39896C5E4C /* Notifications */,
+				F60028BA2425F1F174076E82 /* CalendarService.swift */,
+				4C7A7A0F37DB415BD48DD977 /* DailyCheckInManaging.swift */,
+				850C053762855560C28C565A /* DailyCheckInService.swift */,
+				25D2AC10BAA59ABA28687BEE /* ProjectManaging.swift */,
+				4BBE3013DD5DC1C466559460 /* ProjectService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1961E699318C550E34FE7B35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B90253ABA4B16B7CAFC7E4B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2634BBAAFE0B1A014F9398EA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0E57E643EB2373B66AA89686 /* AppDependencies.swift */,
+				3D3176A3ADD86814FC64C081 /* AppReconciliationService.swift */,
+				4BE5B9DB3485470122AB66A7 /* AppRoute.swift */,
+				56C41D9F93F6171FE4DF1258 /* TreckDailyApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2B287CFD69C01CC10C76F232 /* ProjectEditor */ = {
+			isa = PBXGroup;
+			children = (
+				E251CB89F80361E3C696293E /* ProjectEditorView.swift */,
+			);
+			path = ProjectEditor;
+			sourceTree = "<group>";
+		};
+		461E4DB1671A7E453598D742 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A4691B0FBBEB448985331D90 /* Errors */,
+				6793CDCEF193ED0B3A9F787B /* Models */,
+				FE72BD9D33479C6ED5E95C24 /* Policies */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6793CDCEF193ED0B3A9F787B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7E4070E7423991D5D873FC1 /* DailyCheckInStatus.swift */,
+				31BBD0E779556AF107B97557 /* FinalDailyResult.swift */,
+				83A816F9144D4536AE325C2A /* LocalDay.swift */,
+				38C97E4CDA671D72777036D7 /* NotificationAuthorizationState.swift */,
+				320495436AC33C4BD87F24EF /* ProjectStatus.swift */,
+				61C908C33244F2F24216ECA5 /* ReminderPolicy.swift */,
+				55F0A9B582A63940FCB133D7 /* ReminderTime.swift */,
+				DE7815D11A227697AC59AFC4 /* ReminderTimeInput.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6B6F53C4A2AF1F96EE5613C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C8EA66DAA33F62077D7D3DA /* StreakDaily.app */,
+				779094EDE2DA6888D8CC2293 /* StreakDailyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D9831CF5F5B5381F812C893 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				0F291171383DAF865C9615FB /* Derived */,
+				B9757C096177B250C8134D48 /* StreakDaily */,
+				073DF06B5018744FB613C288 /* StreakDailyTests */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		75BAF73B13F59BD893B2A8A2 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BF98F2D7C79A5A31561C4 /* LaunchView.swift */,
+				8910BC43765B38B6C8F1145C /* LaunchWordmarkLabel.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		7654DA485E43D79E628EBB15 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				FE7E2A7D4468677C40EB8834 /* Models */,
+				874C1D01CF0C39AB5D790BC5 /* ModelContainerFactory.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		847E77F0828437638CABF1AD /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				633E88C45821CD2F2397B7A1 /* AppError.swift */,
+				EDAF14983A4C764F0696105E /* ProjectSectioning.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8E69BAE7DEFA50D2811C0F1E = {
+			isa = PBXGroup;
+			children = (
+				6B6F53C4A2AF1F96EE5613C7 /* Products */,
+				6D9831CF5F5B5381F812C893 /* Project */,
+			);
+			sourceTree = "<group>";
+		};
+		9159822440E7868108121B56 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC44115893C41A9384BF1BED /* TuistAssets+StreakDaily.swift */,
+				BFD72E7C8E006EF4DE063916 /* TuistBundle+StreakDaily.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A4691B0FBBEB448985331D90 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				13728D968824DB51D13C9C85 /* DailyCheckInError.swift */,
+				B1D92C8B97E939BA09A2D49C /* NotificationError.swift */,
+				CBEECB71964F63DC50D765DF /* ProjectError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		B44CB694CC3DCCF1B74B2AD1 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				8F26C4454CE6821555912EE0 /* StreakDaily-Info.plist */,
+				DF4EC0C46267A7C57E2E7866 /* StreakDailyTests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		B9757C096177B250C8134D48 /* StreakDaily */ = {
+			isa = PBXGroup;
+			children = (
+				2634BBAAFE0B1A014F9398EA /* App */,
+				461E4DB1671A7E453598D742 /* Domain */,
+				ED458B91A301E68480350391 /* Features */,
+				7654DA485E43D79E628EBB15 /* Persistence */,
+				1961E699318C550E34FE7B35 /* Resources */,
+				118E4C837A4C3BCA15A6FEE0 /* Services */,
+				847E77F0828437638CABF1AD /* Shared */,
+			);
+			path = StreakDaily;
+			sourceTree = "<group>";
+		};
+		C214D735E0488F49F235F3FE /* ProjectDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DBB65D0A571ECABA89956E44 /* ProjectDetailView.swift */,
+			);
+			path = ProjectDetail;
+			sourceTree = "<group>";
+		};
+		EBBB0A074DC84E39896C5E4C /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				8288A1E61BD9FA0D939540EE /* NotificationDelegate.swift */,
+				AAB7705ABCD3E6CBFDE57A15 /* NotificationIdentifiers.swift */,
+				AB39F810C9E81FE558D30550 /* NotificationScheduling.swift */,
+				28B231EB8ACA48CD0F460A1F /* ProjectReminder.swift */,
+				9FFC95CD72684F914A6C1EED /* SystemNotificationService.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		ED458B91A301E68480350391 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				75BAF73B13F59BD893B2A8A2 /* Launch */,
+				C214D735E0488F49F235F3FE /* ProjectDetail */,
+				2B287CFD69C01CC10C76F232 /* ProjectEditor */,
+				FA5027311EF8A496D53AC3C8 /* ProjectList */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F96405C2B84EE480765C7BB5 /* TestSupport */ = {
+			isa = PBXGroup;
+			children = (
+				348DFA0AED26ABB49BE4F58F /* FixedCalendarProvider.swift */,
+				1E7943D7064E23CB0360E687 /* MockNotificationService.swift */,
+			);
+			path = TestSupport;
+			sourceTree = "<group>";
+		};
+		FA5027311EF8A496D53AC3C8 /* ProjectList */ = {
+			isa = PBXGroup;
+			children = (
+				8CBC89A1E8BD8DBE86379A85 /* ProjectListView.swift */,
+				ABB20DBF0B81E756DB511CEA /* ProjectRowView.swift */,
+			);
+			path = ProjectList;
+			sourceTree = "<group>";
+		};
+		FE72BD9D33479C6ED5E95C24 /* Policies */ = {
+			isa = PBXGroup;
+			children = (
+				F184B371BFC1440511097CBB /* ActiveProjectPolicy.swift */,
+				3DF27E5AF2C21FE323E16413 /* DailyCheckInPolicy.swift */,
+				773470E94CD062B938A41035 /* ProjectStatusTransitionPolicy.swift */,
+			);
+			path = Policies;
+			sourceTree = "<group>";
+		};
+		FE7E2A7D4468677C40EB8834 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F09BAE34B5087E9468F64FB3 /* DailyCheckIn.swift */,
+				5FA8D2E2222EC7DCFA0E2C16 /* LearningProject.swift */,
+				267F12C3749CC7AB88E36E21 /* ReminderEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9351C27F538AF249E32A8FA7 /* StreakDaily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C0F7CD332C4E928BEE5E4FA /* Build configuration list for PBXNativeTarget "StreakDaily" */;
+			buildPhases = (
+				C1718976BE2E68213506DC9E /* Sources */,
+				7D1D696F6AD8F0C0397DFB27 /* Resources */,
+				48DFFF5A0D02890A01DCA1B1 /* Frameworks */,
+				8AB5DF8C629321F445264C0E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreakDaily;
+			packageProductDependencies = (
+			);
+			productName = StreakDaily;
+			productReference = 8C8EA66DAA33F62077D7D3DA /* StreakDaily.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B928535D2829DD1F60F3C04C /* StreakDailyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B46E9402F21CBEF849E44F89 /* Build configuration list for PBXNativeTarget "StreakDailyTests" */;
+			buildPhases = (
+				645866204295C606A36712DC /* Sources */,
+				A37BC8E9DD6EAED6AF734CB3 /* Resources */,
+				8D56B10F8BB051FBCDC1D393 /* Frameworks */,
+				741853BBCB4A9267CBFBEC07 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				474CABEC65F719D99FBBC5D6 /* PBXTargetDependency */,
+			);
+			name = StreakDailyTests;
+			packageProductDependencies = (
+			);
+			productName = StreakDailyTests;
+			productReference = 779094EDE2DA6888D8CC2293 /* StreakDailyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9429538F00A611E7808A25D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					B928535D2829DD1F60F3C04C = {
+						TestTargetID = 9351C27F538AF249E32A8FA7;
+					};
+				};
+			};
+			buildConfigurationList = 72AD3A9F6EAF25EC0C5EF37B /* Build configuration list for PBXProject "StreakDaily" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8E69BAE7DEFA50D2811C0F1E;
+			productRefGroup = 6B6F53C4A2AF1F96EE5613C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9351C27F538AF249E32A8FA7 /* StreakDaily */,
+				B928535D2829DD1F60F3C04C /* StreakDailyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D1D696F6AD8F0C0397DFB27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5718D2704F540CE67B54983A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A37BC8E9DD6EAED6AF734CB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		645866204295C606A36712DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE565E98A902F4C47F47948 /* ActiveProjectPolicyTests.swift in Sources */,
+				66A592FD8585C16C7A5181A9 /* CalendarProviderTests.swift in Sources */,
+				5B03CF147A86EB850663F6FB /* DailyCheckInPolicyTests.swift in Sources */,
+				491F1C20EAC7582CE623DC49 /* NotificationIdentifiersTests.swift in Sources */,
+				C9CFE312D05C495E0EBC61E4 /* PersistenceTests.swift in Sources */,
+				7A17CBD9E9ABC43668BDE388 /* ProjectSectioningTests.swift in Sources */,
+				BF11AE3924410CF3B8CF5388 /* ProjectServiceTests.swift in Sources */,
+				C859FF3A7FFC4DE1A7B1769C /* ProjectStatusTransitionPolicyTests.swift in Sources */,
+				1C2A0827166B6569C1DF2499 /* FixedCalendarProvider.swift in Sources */,
+				9BF83BBE859672B23A41F960 /* MockNotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1718976BE2E68213506DC9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC1BFF5C1E335DC788DB3CA /* TuistAssets+StreakDaily.swift in Sources */,
+				95D0EBAE39FD82B4CD491F40 /* TuistBundle+StreakDaily.swift in Sources */,
+				2F08A69D36A6BAD7CF4EB750 /* AppDependencies.swift in Sources */,
+				EDA42696E54F947A345BD6BF /* AppReconciliationService.swift in Sources */,
+				24AF7C09D4A7CD94CB7F486C /* AppRoute.swift in Sources */,
+				745336032C795FF6586BA0EC /* TreckDailyApp.swift in Sources */,
+				74F053A08CB5347CE10095FE /* DailyCheckInError.swift in Sources */,
+				E311C70FA13B5E2274284D67 /* NotificationError.swift in Sources */,
+				8E1207C86A720F04BC97E538 /* ProjectError.swift in Sources */,
+				823FD6145EABA076B2CD4A30 /* DailyCheckInStatus.swift in Sources */,
+				894E165F05E98F9B0B845CCB /* FinalDailyResult.swift in Sources */,
+				42B07C0E93D90A658A57EC8D /* LocalDay.swift in Sources */,
+				051433FA835D65BF4CF6F99A /* NotificationAuthorizationState.swift in Sources */,
+				40AEB39FFCAB8393D0DFC0E2 /* ProjectStatus.swift in Sources */,
+				A52431F677DC3D1FDA3EC804 /* ReminderPolicy.swift in Sources */,
+				52CA7DD074E54B60B6E407A7 /* ReminderTime.swift in Sources */,
+				FDD9F97C0AF79B83C19431B2 /* ReminderTimeInput.swift in Sources */,
+				BF9D9CD9218E3EEE0B08F177 /* ActiveProjectPolicy.swift in Sources */,
+				18210B6FC043DC09ED91C58F /* DailyCheckInPolicy.swift in Sources */,
+				2A887337F56C2A0D2ED1F78D /* ProjectStatusTransitionPolicy.swift in Sources */,
+				C67DCCCC108D2C22ED4C3C51 /* LaunchView.swift in Sources */,
+				1E824EDBC42C07BD2780D15E /* LaunchWordmarkLabel.swift in Sources */,
+				4CD64CD199E279B64CC49C5E /* ProjectDetailView.swift in Sources */,
+				EDA2E8C69CCB68FD338CEFD5 /* ProjectEditorView.swift in Sources */,
+				1483FD8DAD4DCE4731407F8F /* ProjectListView.swift in Sources */,
+				C7CAC097477B2BBCE3F97F1C /* ProjectRowView.swift in Sources */,
+				A4A53BE17E68A422141C2E42 /* ModelContainerFactory.swift in Sources */,
+				CB1584070AC1581A942F792F /* DailyCheckIn.swift in Sources */,
+				F0B50443A789E31975CFE6C5 /* LearningProject.swift in Sources */,
+				EFAD3614E534A944CFDCB885 /* ReminderEntry.swift in Sources */,
+				22EB8D59AA22F993BC65F71F /* CalendarService.swift in Sources */,
+				C860F241A34A6176485E0565 /* DailyCheckInManaging.swift in Sources */,
+				E7E5A11AB0389650D2D3027F /* DailyCheckInService.swift in Sources */,
+				E579DC672B6EB2CD5665F4A9 /* NotificationDelegate.swift in Sources */,
+				694DE6266AAFC24E9264A4F1 /* NotificationIdentifiers.swift in Sources */,
+				27007CA3532E6185680CCB07 /* NotificationScheduling.swift in Sources */,
+				3AF6A75F473808890FE1D243 /* ProjectReminder.swift in Sources */,
+				3A6D6E524D154DF02C191ACE /* SystemNotificationService.swift in Sources */,
+				F15BDF3DD03A177C004DB17D /* ProjectManaging.swift in Sources */,
+				9D6D179FB8AAEC24B0AC828B /* ProjectService.swift in Sources */,
+				5C3FD5E102FA4DF332A11690 /* AppError.swift in Sources */,
+				2880ED06741DD39B5C8EFD35 /* ProjectSectioning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		474CABEC65F719D99FBBC5D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StreakDaily;
+			target = 9351C27F538AF249E32A8FA7 /* StreakDaily */;
+			targetProxy = E43000FA8DA2832280A32680 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		387DD98A139B46D9741FA727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/StreakDailyTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dienbell.streak.tests;
+				PRODUCT_NAME = StreakDailyTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreakDaily.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StreakDaily";
+				TEST_TARGET_NAME = StreakDaily;
+			};
+			name = Debug;
+		};
+		39A688CFF08C344FFF38D9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/StreakDaily-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dienbell.streak;
+				PRODUCT_NAME = StreakDaily;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		44FE03C2492BCEF92B16EBB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/StreakDaily-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dienbell.streak;
+				PRODUCT_NAME = StreakDaily;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D4C4D77B13B1A46D8FB56CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4V4QEMAAYL;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		E50A2ABF35AF34B5A37CAB53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4V4QEMAAYL;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAA9C7CCAE03D66692BAC253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/StreakDailyTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dienbell.streak.tests;
+				PRODUCT_NAME = StreakDailyTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreakDaily.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StreakDaily";
+				TEST_TARGET_NAME = StreakDaily;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72AD3A9F6EAF25EC0C5EF37B /* Build configuration list for PBXProject "StreakDaily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C4D77B13B1A46D8FB56CE8 /* Debug */,
+				E50A2ABF35AF34B5A37CAB53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C0F7CD332C4E928BEE5E4FA /* Build configuration list for PBXNativeTarget "StreakDaily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44FE03C2492BCEF92B16EBB0 /* Debug */,
+				39A688CFF08C344FFF38D9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B46E9402F21CBEF849E44F89 /* Build configuration list for PBXNativeTarget "StreakDailyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				387DD98A139B46D9741FA727 /* Debug */,
+				EAA9C7CCAE03D66692BAC253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9429538F00A611E7808A25D3 /* Project object */;
+}

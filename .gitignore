@@ -1,7 +1,7 @@
 # Xcode / Tuist tuist generate
-*.xcodeproj
-*.xcworkspace
-Derived/
+# *.xcodeproj
+# *.xcworkspace
+# Derived/
 build/
 *.xcuserstate
 xcuserdata/
